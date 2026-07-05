@@ -68,7 +68,7 @@ SOURCES = {
         "url_vente":    "https://www.agenz.ma/fr/acheter/immo-{city}",
         "url_location": "https://www.agenz.ma/fr/louer/immo-{city}",
         "pagination":   "?page={page}",
-        "enabled":      True,
+        "enabled":      True, 
     },
 }
 

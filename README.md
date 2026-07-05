@@ -1,5 +1,5 @@
-# 🏠 Observatoire des Prix Immobiliers — Maroc
-## Indice Hédonique des Prix Résidentiels à partir de données web
+# 🏠 Observatoire des Prix Immobiliers — Maroc  (MUBAWAB  + AGENZ.MA )
+## Indice Hédonique des Prix Résidentiels à partir de données web(AYA BERRADY)
 
 > Projet de data engineering et statistiques officielles expérimentales  
 > Méthodologie: IMF RPPI Handbook · Eurostat HPPI Guide · OECD
@@ -9,7 +9,7 @@
 ## Architecture du projet
 
 ```
-rppi_maroc/
+rppi_maroc/(AYA BERRADY)
 ├── config/
 │   └── settings.py          ← configuration centrale (URLs, paramètres, phases)
 ├── ingestion/
@@ -17,6 +17,7 @@ rppi_maroc/
 │   └── scrapers/
 │       ├── base_scraper.py   ← classe abstraite
 │       └── mubawab_scraper.py ← source confirmée
+        ├──agenz_scraper.py
 ├── processing/
 │   └── cleaner.py            ← Phase 5: ETL + qualité des données
 ├── database/
@@ -49,7 +50,7 @@ rppi_maroc/
 
 ---
 
-## Installation 
+## Installation (AYA BERRADY)
 
 ```bash
 # Cloner / extraire le projet
@@ -65,11 +66,11 @@ source venv/bin/activate
 
 ---
 
-## Exécution
+## Exécution (AYA BERRADY)
 
 ```bash
-# Phase 3 — Collecte des données (~20 min, 5 villes × 15 pages)
-python main.py --ingest
+# Phase 3 — Collecte des données (~20 min, 5 villes × 15 pages) (MUBAWAB  + AGENZ.MA )
+python main.py --ingest { ingest for both mubawab(1) , agenz(2) OR ,ingest  source -- (1)/(2)
 
 # Phase 5 — Nettoyage et enrichissement
 python main.py --clean
@@ -91,7 +92,7 @@ python main.py
 
 ---
 
-## Modèle hédonique (Phase 7-9)
+## Modèle hédonique (Phase 7-9)(AYA BERRADY)
 
 **Formule semi-log OLS** (IMF RPPI Handbook):
 

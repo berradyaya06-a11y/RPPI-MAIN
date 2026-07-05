@@ -16,7 +16,7 @@ def _load_registry():
     from ingestion.scrapers.agenz_scraper import AgenzScraper
     SCRAPER_REGISTRY.update({
         "mubawab": MubawabScraper,
-        "agenz":   AgenzScraper,
+        "agenz":   AgenzScraper, 
     })
     return SCRAPER_REGISTRY
 
