@@ -10,6 +10,7 @@ ml/models/
 *.csv
 *.pkl
 *.joblib
+*.html
 
 # Environment
 .env
